@@ -18,7 +18,7 @@
             <router-link to="/destination" class="nav-link" active-class="active">01 Destination</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/crew" class="nav-link" active-class="active">02 Crew</router-link>
+            <router-link to="/crew" class="nav-link" active-class="active">02 Crews</router-link>
           </li>
           <li class="nav-item">
             <router-link to="/technology" class="nav-link" active-class="active">03 Technology</router-link>
