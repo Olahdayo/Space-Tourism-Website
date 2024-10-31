@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import crewData from "@/assets/data.json";
 
 export default {
   name: "Crew",
@@ -43,15 +43,12 @@ export default {
     };
   },
   created() {
-    axios
-      .get("http://localhost:3000/crew")
-      .then((response) => {
-        this.crew = response.data;
-        this.currentCrewMember = this.crew[0];
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    try {
+      this.crew = crewData.crew;
+      this.currentCrewMember = this.crew[0];
+    } catch (error) {
+      console.error("Error loading crew data:", error);
+    }
   },
   methods: {
     setCrewMember(member) {
@@ -93,10 +90,10 @@ export default {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   #crew {
     background-image: url("@/assets/crew/background-crew-mobile.jpg");
-    height: 1020px;
+    height: 900px;
     padding-left:10px;
   }
   #crew h1 {
@@ -105,6 +102,7 @@ export default {
   .btnDiv {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
   }
   .row {
     display: flex;

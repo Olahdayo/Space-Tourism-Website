@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import axios from "axios";
+import technologyData from "@/assets/data.json";
 
 export default {
   name: "Technology",
@@ -47,15 +47,12 @@ export default {
     };
   },
   created() {
-    axios
-      .get("http://localhost:3000/technology")
-      .then((response) => {
-        this.technology = response.data;
-        this.currentTechnology = this.technology[0];
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+     try {
+      this.technology = technologyData.technology;
+      this.currentTechnology = this.technology[0];
+    } catch (error) {
+      console.error("Error loading technology data:", error);
+    }
   },
   methods: {
     setTechnology(tech) {
@@ -102,10 +99,10 @@ export default {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   #technology {
     background-image: url("@/assets/technology/background-technology-mobile.jpg");
-    height: 100%;
+    height: 1000px;
     padding:10px;
   }
   
@@ -117,6 +114,7 @@ export default {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
   }
 
   .btn {

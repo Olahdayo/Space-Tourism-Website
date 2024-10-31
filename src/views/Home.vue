@@ -63,10 +63,10 @@ export default {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   #home {
     background-image: url("@/assets/home/background-home-mobile.jpg");
-    height: 100%;
+    height: 900px;
     padding: 50px 9px;
   }
   #home h3 {
