@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 mt-5">
         <img
-          :src="currentCrewMember.images.png"
+          :src="`/${currentCrewMember.images.png}`"
           :alt="currentCrewMember.name"
           class="img-fluid"
         />
