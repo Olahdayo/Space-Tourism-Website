@@ -28,7 +28,7 @@ export default {
 
 <style scoped>
 #home {
-  background-image: url("@/assets/home/background-home-desktop.jpg");
+  background-image: url("/images/home/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,14 +58,14 @@ export default {
 
 @media (max-width: 768px) {
   #home {
-    background-image: url("@/assets/home/background-home-tablet.jpg");
+    background-image: url("/images/home/background-home-tablet.jpg");
     height: 100%;
   }
 }
 
 @media (max-width: 600px) {
   #home {
-    background-image: url("@/assets/home/background-home-mobile.jpg");
+    background-image: url("/images/home/background-home-mobile.jpg");
     height: 900px;
     padding: 50px 9px;
   }

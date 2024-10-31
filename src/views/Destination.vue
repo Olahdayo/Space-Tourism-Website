@@ -68,7 +68,7 @@ export default {
 
 <style scoped>
 #destination {
-  background-image: url("@/assets/destination/background-destination-desktop.jpg");
+  background-image: url("/images/destination/background-destination-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,14 +94,14 @@ export default {
 
 @media (max-width: 768px) {
   #destination {
-    background-image: url("@/assets/destination/background-destination-tablet.jpg");
+    background-image: url("/images/destination/background-destination-tablet.jpg");
     height: 100%;
   }
 }
 
 @media (max-width: 600px) {
   #destination {
-    background-image: url("@/assets/destination/background-destination-mobile.jpg");
+    background-image: url("/images/destination/background-destination-mobile.jpg");
     height: 900px;
     padding-left: 5px;
   }

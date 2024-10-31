@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 #crew {
-  background-image: url("@/assets/technology/background-technology-desktop.jpg");
+  background-image: url("/images/technology/background-technology-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -85,14 +85,14 @@ export default {
 }
 @media (max-width: 768px) {
   #crew {
-    background-image: url("@/assets/crew/background-crew-tablet.jpg");
+    background-image: url("/images/crew/background-crew-tablet.jpg");
     height: 100%;
   }
 }
 
 @media (max-width: 600px) {
   #crew {
-    background-image: url("@/assets/crew/background-crew-mobile.jpg");
+    background-image: url("/images/crew/background-crew-mobile.jpg");
     height: 900px;
     padding-left:10px;
   }
